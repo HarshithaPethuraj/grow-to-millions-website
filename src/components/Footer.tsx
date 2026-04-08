@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#C9A84C] to-[#b89740] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
                 <span className="text-[#0A1628] font-bold text-lg">GTM</span>
               </div>
               <span className="ml-3 text-lg font-bold">Grow to Millions</span>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-[#C9A84C] transition-colors text-sm"
+                    className="text-gray-400 hover:text-green-500 transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#C9A84C] transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -57,7 +57,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#C9A84C] transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors"
               >
                 <Instagram size={20} />
               </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#C9A84C] transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors"
               >
                 <Twitter size={20} />
               </a>

@@ -115,7 +115,7 @@ export default function Services() {
               >
                 <div className="flex-1">
                   <div className="bg-white p-8 rounded-2xl shadow-lg">
-                    <div className="text-[#C9A84C] mb-4">{service.icon}</div>
+                    <div className="text-green-500 mb-4">{service.icon}</div>
                     <h2 className="text-3xl font-bold text-[#0A1628] mb-4">
                       {service.title}
                     </h2>
@@ -125,7 +125,7 @@ export default function Services() {
                     <ul className="space-y-3">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-[#C9A84C] mr-3 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
@@ -135,7 +135,7 @@ export default function Services() {
                 <div className="flex-1">
                   <div className="bg-gradient-to-br from-[#0A1628] to-[#1a3a52] p-12 rounded-2xl text-white h-full flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl font-bold text-[#C9A84C] mb-4">
+                      <div className="text-6xl font-bold text-green-500 mb-4">
                         0{index + 1}
                       </div>
                       <p className="text-xl">Professional Service</p>
@@ -158,7 +158,7 @@ export default function Services() {
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-[#C9A84C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105"
+            className="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105"
           >
             Schedule a Consultation
           </Link>

@@ -35,8 +35,8 @@ export default function Navbar() {
                 to={link.path}
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'text-[#C9A84C]'
-                    : 'text-gray-700 hover:text-[#C9A84C]'
+                    ? 'text-green-500'
+                    : 'text-gray-700 hover:text-green-500'
                 }`}
               >
                 {link.name}
@@ -44,7 +44,7 @@ export default function Navbar() {
             ))}
             <Link
               to="/contact"
-              className="bg-[#C9A84C] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#b89740] transition-colors"
+              className="bg-green-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors"
             >
               Get Started
             </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 hover:text-[#C9A84C] transition-colors"
+            className="md:hidden text-gray-700 hover:text-green-500 transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -69,7 +69,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'bg-[#C9A84C] text-white'
+                    ? 'bg-green-500 text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -79,7 +79,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full bg-[#C9A84C] text-white px-4 py-2 rounded-lg font-medium text-center hover:bg-[#b89740] transition-colors"
+              className="block w-full bg-green-500 text-white px-4 py-2 rounded-lg font-medium text-center hover:bg-green-600 transition-colors"
             >
               Get Started
             </Link>

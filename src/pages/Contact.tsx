@@ -98,7 +98,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -154,7 +154,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all resize-none"
                       placeholder="Tell us about your project and goals..."
                     ></textarea>
                   </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#C9A84C] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="w-full bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       'Sending...'
@@ -202,14 +202,14 @@ export default function Contact() {
                       href={info.link}
                       className="flex items-start gap-4 group"
                     >
-                      <div className="w-12 h-12 bg-[#C9A84C]/10 rounded-lg flex items-center justify-center text-[#C9A84C] group-hover:bg-[#C9A84C] group-hover:text-white transition-colors flex-shrink-0">
+                      <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-colors flex-shrink-0">
                         {info.icon}
                       </div>
                       <div>
                         <div className="font-semibold text-[#0A1628] mb-1">
                           {info.title}
                         </div>
-                        <div className="text-gray-600 group-hover:text-[#C9A84C] transition-colors">
+                        <div className="text-gray-600 group-hover:text-green-500 transition-colors">
                           {info.value}
                         </div>
                       </div>
@@ -248,7 +248,7 @@ export default function Contact() {
           <p className="text-xl text-gray-300 mb-8">
             Book a free 30-minute strategy consultation with our team
           </p>
-          <button className="bg-[#C9A84C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105">
+          <button className="bg-green-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105">
             Schedule a Call
           </button>
         </div>

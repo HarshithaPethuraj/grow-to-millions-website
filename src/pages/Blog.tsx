@@ -89,7 +89,7 @@ export default function Blog() {
                     {post.tags.slice(0, 2).map((tag, idx) => (
                       <span
                         key={idx}
-                        className="bg-[#C9A84C] text-white text-xs px-3 py-1 rounded-full font-medium"
+                        className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-medium"
                       >
                         {tag}
                       </span>
@@ -115,7 +115,7 @@ export default function Blog() {
 
                   <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
 
-                  <button className="text-[#C9A84C] font-semibold hover:underline inline-flex items-center gap-2 group">
+                  <button className="text-green-500 font-semibold hover:underline inline-flex items-center gap-2 group">
                     Read More
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -138,9 +138,9 @@ export default function Blog() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A84C]"
+              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
-            <button className="bg-[#C9A84C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#b89740] transition-colors whitespace-nowrap">
+            <button className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors whitespace-nowrap">
               Subscribe
             </button>
           </div>
@@ -157,7 +157,7 @@ export default function Blog() {
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-[#C9A84C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105"
+            className="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105"
           >
             Get in Touch
           </Link>

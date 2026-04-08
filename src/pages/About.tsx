@@ -80,19 +80,19 @@ export default function About() {
             <div className="bg-gradient-to-br from-[#0A1628] to-[#1a3a52] p-12 rounded-2xl text-white">
               <div className="space-y-8">
                 <div>
-                  <div className="text-5xl font-bold text-[#C9A84C] mb-2">500+</div>
+                  <div className="text-5xl font-bold text-green-500 mb-2">500+</div>
                   <p className="text-gray-300">Successful Client Partnerships</p>
                 </div>
                 <div>
-                  <div className="text-5xl font-bold text-[#C9A84C] mb-2">10M+</div>
+                  <div className="text-5xl font-bold text-green-500 mb-2">10M+</div>
                   <p className="text-gray-300">Total Reach Generated</p>
                 </div>
                 <div>
-                  <div className="text-5xl font-bold text-[#C9A84C] mb-2">98%</div>
+                  <div className="text-5xl font-bold text-green-500 mb-2">98%</div>
                   <p className="text-gray-300">Client Retention Rate</p>
                 </div>
                 <div>
-                  <div className="text-5xl font-bold text-[#C9A84C] mb-2">5+</div>
+                  <div className="text-5xl font-bold text-green-500 mb-2">5+</div>
                   <p className="text-gray-300">Years of Excellence</p>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {values.map((value, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-sm text-center">
-                <div className="text-[#C9A84C] mb-4 flex justify-center">
+                <div className="text-green-500 mb-4 flex justify-center">
                   {value.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A1628] mb-4">
@@ -145,7 +145,7 @@ export default function About() {
                 key={index}
                 className="bg-gradient-to-br from-[#0A1628] to-[#1a3a52] p-8 rounded-xl text-white text-center transform hover:scale-105 transition-all"
               >
-                <div className="w-16 h-16 bg-[#C9A84C] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{member.role}</h3>
@@ -166,7 +166,7 @@ export default function About() {
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-[#C9A84C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105"
+            className="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105"
           >
             Start Your Journey
           </Link>

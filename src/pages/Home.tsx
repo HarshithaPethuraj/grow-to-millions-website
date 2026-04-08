@@ -76,7 +76,7 @@ export default function Home() {
     <div className="pt-16">
       <section className="relative bg-gradient-to-br from-[#0A1628] via-[#0f1f3a] to-[#0A1628] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#C9A84C] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-green-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             We Help Brands
             <br />
-            <span className="text-[#C9A84C]">Grow to Millions</span>
+            <span className="text-green-500">Grow to Millions</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
             Data-driven digital marketing strategies that scale your business
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-[#C9A84C] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105"
+              className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105"
             >
               Start Growing
             </Link>
@@ -110,19 +110,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-[#C9A84C] mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
                 500+
               </div>
               <div className="text-gray-600 font-medium">Clients</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-[#C9A84C] mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
                 10M+
               </div>
               <div className="text-gray-600 font-medium">Reach Generated</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-[#C9A84C] mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
                 98%
               </div>
               <div className="text-gray-600 font-medium">Client Retention</div>
@@ -148,14 +148,14 @@ export default function Home() {
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-1 border border-gray-100"
               >
-                <div className="text-[#C9A84C] mb-4">{service.icon}</div>
+                <div className="text-green-500 mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-[#0A1628] mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <Link
                   to="/services"
-                  className="text-[#C9A84C] font-semibold hover:underline inline-flex items-center"
+                  className="text-green-500 font-semibold hover:underline inline-flex items-center"
                 >
                   Learn More →
                 </Link>
@@ -179,7 +179,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-[#C9A84C] mb-6 flex justify-center">
+                <div className="text-green-500 mb-6 flex justify-center">
                   {item.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A1628] mb-4">
@@ -203,7 +203,7 @@ export default function Home() {
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-[#C9A84C] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#b89740] transition-all transform hover:scale-105"
+            className="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105"
           >
             Book a Free Strategy Call
           </Link>
