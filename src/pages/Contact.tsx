@@ -45,19 +45,19 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'hello@growtomillions.com',
-      link: 'mailto:hello@growtomillions.com',
+      value: 'yogeshrp27@gmail.com',
+      link: 'mailto:yogeshrp27@gmail.com',
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+91 8778002107',
+      link: 'tel:+918778002107',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Office',
-      value: 'San Francisco, CA',
+      value: 'Chennai, Anna Nagar',
       link: '#',
     },
   ];
