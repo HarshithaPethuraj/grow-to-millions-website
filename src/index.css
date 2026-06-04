@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans text-navy-800 antialiased bg-white; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+}
+
+@layer utilities {
+  .section-pad { @apply py-24 px-4 sm:px-6 lg:px-12; }
+  .max-w-site  { @apply max-w-7xl mx-auto; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #0A1628; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #047857; }
+
+/* Input focus */
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.5);
+}
+
+/* Questionnaire overlay */
+.overlay-bg {
+  background: linear-gradient(135deg, #060E1A 0%, #0A1628 50%, #122A50 100%);
+}
+
+/* Respect users who request reduced motion — kills framer-motion theatre,
+   CSS animations, and smooth-scroll. WCAG 2.1 AAA (2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto; }
+}
